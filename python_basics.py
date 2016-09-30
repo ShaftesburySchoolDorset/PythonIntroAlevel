@@ -75,15 +75,6 @@ five = int(float("5.7")) #convert string to int
 six_point_zero = float(6) #convert int to float
                 # => 6.0
 
-# Problem Solving
-# -Write each problem in a new file
-
-"""
-1. Write a VAT calculator that takes the total
-and VAT % then calculates the final total and
-outputs it in the format: £0.00
-"""
-
 # Array of sunshine...
 # ... a list of values
 
@@ -127,3 +118,97 @@ for x in range(1000000):
     print(x)
     if x == 20:
         break #let's leave this loop
+
+# Functions
+
+def name_of_function():
+    #Stuff the function does...
+
+# This is not indented and as a result not part of
+# the 'name_of_function' functon
+
+def sayHello():
+    for x in range(6):
+        print ("Hello, my name is Jamie. What's yours?")
+
+sayHello()
+
+# 1000 lines later...
+
+sayHello()
+
+# function attributes
+
+def sayHelloToYou(your_name):
+    print("Hello " + your_name)
+
+sayHelloToYou("Bob")
+sayHelloToYou("Doris")
+
+
+def sayHelloXTimes(x):
+    for i in range(x):
+        print("hello")
+
+
+def anotherFunc(x, y, z):
+    #do something
+
+def sometimesDoSomething(x = 0): #'x' is an optional attribute
+    if x == 0:
+        #do something
+    else
+        #do something else
+
+def sumNumbers(num1, num2):
+    result = num1 + num2
+    return result
+
+def subtractNumbers(num1, num2):
+    return num1 - num2
+
+answer = sumNumbers(1, 3)
+answer2 = subtractNumbers(3, 1)
+
+# Iteration vs Recursion
+
+n = 3
+answer = 1
+for i = 1 in range(n+1)
+	answer = answer * i
+
+#
+
+
+
+
+
+
+
+
+def factorial(n):
+    if n == 0:
+		return 1
+	else
+		return n * factorial(n - 1)
+
+
+
+
+
+
+
+
+
+
+# Mutual recursion
+def even(n):
+    return True if n == 0 else odd(n - 1)
+
+def odd(n):
+    return False if n == 0 else even(n - 1)
+
+even(10)
+#True
+odd(10)
+#False
