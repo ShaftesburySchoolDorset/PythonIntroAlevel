@@ -23,14 +23,11 @@ class BankAccount(object):
 		
 	def transaction(self, amount, withdraw, other_account):
 		if withdraw:
-			if amount > self.balance:
-				print("Insufficient funds")
-			else:
-				self.withdraw(amount)
-				other_account.deposit(10)
+			self.withdraw(amount)
+			other_account.deposit(amount)
 		else:
-			other_account.withdraw(10)
-			self.deposit(10)
+			other_account.withdraw(amount)
+			self.deposit(amount)
 
 
 # code
