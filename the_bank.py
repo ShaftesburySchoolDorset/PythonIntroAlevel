@@ -1,7 +1,7 @@
 class BankAccount(object):
 	
 	def __init__(self, person_name, opening_balance = 0):
-		self.balance = opening_balance
+		self.__balance = opening_balance
 		self.name = person_name
 		print("New account created for: {}".format(self.name))
 
@@ -11,15 +11,15 @@ class BankAccount(object):
 
 	# Withdrawn method
 	def withdraw(self, amount):
-		if amount > self.balance:
-			print("Sorry, insufficient funds available. You have: £{}".format(self.balance))
+		if amount > self.__balance:
+			print("Sorry, insufficient funds available. You have: £{}".format(self.__balance))
 		else:
-			self.balance -= amount
-			print("£{} has been withdrawn. New balance: £{}".format(amount, self.balance))
+			self.__balance -= amount
+			print("£{} has been withdrawn. New __balance: £{}".format(amount, self.__balance))
 			
 	def deposit(self, amount):
-		self.balance += amount
-		print("£{} has been deposited. New balance: £{}".format(amount, self.balance))
+		self.__balance += amount
+		print("£{} has been deposited. New __balance: £{}".format(amount, self.__balance))
 		
 	def transaction(self, amount, withdraw, other_account):
 		if withdraw:
@@ -32,9 +32,9 @@ class BankAccount(object):
 
 # code
 a = BankAccount("Joe Bloggs", 50)
-b = BankAccount("Jacob Smirthwiat", 47)
-# account a gives £10 to account b
-a.transaction(10, True, b)
+print(a.__balance)
+a.__balance -= 150
+print(a.__balance)
 
 
 
