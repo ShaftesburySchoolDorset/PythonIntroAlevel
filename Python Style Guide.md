@@ -39,3 +39,6 @@ However, know when to be inconsistent -- sometimes style guide recommendations j
 * Prefer polymorphism over inheritance.
 * Prefer small methods. Between one and five lines is best.
 * Prefer small classes with a single, well-defined responsibility. When a class exceeds 100 lines, it may be doing too many things.
+
+### Code Specifics
+
