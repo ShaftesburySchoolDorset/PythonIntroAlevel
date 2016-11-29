@@ -34,7 +34,10 @@ self.func = func # already done
 - Line 3, 30: Class names should use CamelCase
 - Line 33: Add a space before the method to make the code easier to read
 - Line 39: Variables should be in lower case
-- Line 39: If you are trying to create a new instance of the `generator` class then you should end it with '()' so `quiz = generator()`
+- Line 39: If you are trying to create a new instance of the `generator` class then you should end it with '()' so
+```python
+quiz = generator()
+```
 
 ##  Zach
 
